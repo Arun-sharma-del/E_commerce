@@ -18,7 +18,7 @@ urlpatterns = [
     path('order_success/', views.order_success, name='order_success'),
     path('cart/increase/<int:product_id>/', views.increase_quantity, name='increase_quantity'),
     path('cart/decrease/<int:product_id>/', views.decrease_quantity, name='decrease_quantity'),
-    path('accounts/profile/', views.profile_view, name = 'profile'),
+    path('profile/', views.profile_view, name = 'profile'),
     path('create-checkout-session/', views.create_checkout_session, name='create_checkout_session'),
     path('webhook/stripe/', views.stripe_webhook, name='stripe_webhook'),
     
