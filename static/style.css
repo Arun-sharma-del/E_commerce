@@ -1,7 +1,7 @@
 /* General styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fefffffa;
+    background-color: #cefbfbfa;
 
     margin: 0;
     padding: 0;
@@ -77,28 +77,33 @@ hr {
 /* Container holding all product cards */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
+    
 }
 
 /* Each individual product */
 .product-card {
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   transition :transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card :hover {
+    transform : tanslateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 
 /* Image styling */
 .product-card img {
-    width: 100%;
-    height: auto;
-    max-height: 150px;
-    object-fit: contain;
+    max-width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
 

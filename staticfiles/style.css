@@ -1,7 +1,7 @@
 /* General styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fefffffa;
+    font-family: Arial, sans-serif;
+    background-color: #c9eaf8;
 
     margin: 0;
     padding: 0;
@@ -91,7 +91,7 @@ hr {
     border: 1px solid #eee;
     border-radius: 16px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
     transition: transform 0.2s ease,box-shadow 0.2s ease;
 }
 
