@@ -18,9 +18,9 @@ class Category(models.Model):
 
 
     class Order(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    created = models.DateTimeField(auto_now_add=True)
-    is_paid = models.BooleanField(default=False)
+     user = models.ForeignKey(User, on_delete=models.CASCADE)
+     created = models.DateTimeField(auto_now_add=True)
+     is_paid = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
